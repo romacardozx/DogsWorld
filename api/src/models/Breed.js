@@ -5,7 +5,7 @@ module.exports = (sequelize) => {
   // defino el modelo
   //?DEFINO LA TABLA DE BREED EN LA BASE DE DATOS 
   //?DEFINING BREED TABLE AT DB
-  sequelize.define('dog', {
+  sequelize.define('Breed', {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -27,14 +27,4 @@ module.exports = (sequelize) => {
   },
     { timestamps: false 
   });
-};
-  //?DEFINO LA TABLA DE TEMPERAMENTO EN LA BASE DE DATOS
-  //?DEFINING TEMPERAMENT TABLE AT DB
-  sequelize.define('temperament', {
-  name: {
-    type: DataTypes.STRING
-  },
-},
-  { timestamps: false 
-});
-
+}
