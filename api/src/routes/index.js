@@ -9,7 +9,7 @@ router.use("/temperaments", routetemperaments)
 
 
 
-  
+
   module.exports = router
 
 

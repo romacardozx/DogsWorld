@@ -2,46 +2,46 @@ const {Breed, Temperament} = require ("../db")
 const axios = require('axios');
 const { Op } = require("sequelize");
 
-function llamadoApiRazas(){ 
+
+async function llamadoApiRazas(){ 
 //? Importo razas de la api y los guardo en la BD
 //? IMPORTING BREEDS FROM API AND SAVING TO DB
 try { 
-axios('https://api.thedogapi.com/v1/breeds')
+await axios.get('https://api.thedogapi.com/v1/breeds')
   .then(response => response.data)
   .then(json => {
-    json.forEach(breed => {
-      Breed.create({
-        name: breed.name || 'Could not import name',
-        weight: breed.weight.metric || 'Could not import weight',
+    json.forEach(async breed => {
+      var [bree, _created] = await Breed.findOrCreate({ where: 
+        {name: breed.name || 'Could not import name',}, defaults: 
+        { weight: breed.weight.metric || 'Could not import weight',
         height: breed.height.metric || 'Could not import height',
         life_span: breed.life_span || 'Could not import life span',
         image: breed.image.url || 'Could not import image',
-      })
-      .then(bree => {
-        let breedTemp = breed.temperament && breed.temperament.split(', ');
+       }})
+       let breedTemp = breed.temperament && breed.temperament.split(', ');
         breedTemp?.forEach(breetem => {
           Temperament.findOne({
             where: {name: breetem}
             })
             .then(tem => {bree.addTemperament(tem?.dataValues.id)})
         })
-      })
-    })
+      }
+    )
   })
   .then(console.log('Breeds (re)imported to DB'))
   .catch(err => console.error(err));
   } catch{err => console.error(err)};
-}
+} 
 
 
     async function getAllDogs (req, res, next) {
     const { name } = req.query
     try {
     await llamadoApiRazas()
-      //? Trying to get breed by name (if provided by query) including temperament
+      //?ncludi Trying to get breed by name (if provided by query) ing temperament
       if (name) {
           Breed.findAll({
-          include: [Temperament],
+          include: {model:Temperament, through:{attributes:[]}},
           where: { name: { [Op.iLike]: `%${name}%` } },
         }).then((resp) => {
           resp.length ? res.send(resp) : res.send({ message: 'Breed not found' })
@@ -69,7 +69,7 @@ axios('https://api.thedogapi.com/v1/breeds')
         height,
         weight,
         life_span,
-        image: 'https://i.imgur.com/2O2A3WP.jpeg',
+        image: '',
       })
         .then((breed) => breed.addTemperaments(temperament))
         .then(res.send({ message: 'Created.!' }))
