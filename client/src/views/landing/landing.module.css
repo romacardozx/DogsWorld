@@ -9,24 +9,56 @@
 }
 
 
+
 .title {
     font-family: inherit;
-    text-shadow: 0px 5px 10px pink;
+    color: rgb(224, 204, 204);
+    text-shadow: 0px 5px 40px rebeccapurple ;
     font-weight: 800;
-    font-size: 45px;
+    font-size: 70px;
     margin: 0;
+    margin-left: 40px;
     padding: 20px;
 }
+.created{
+    padding: 0;
+    border: 0;
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top: 600px;
+    font-family:inherit;
+    color:rgb(224, 204, 204);
+    font-size: 18.8px;
+    font-weight:800;
+    
 
+    
+}
+.icons{
+    border: 0;
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top:0;
+    padding: 0;
+    color: rebeccapurple;
+    font-size: 45px;
+
+}
+
+.msjbutton{
+    margin: 0;
+
+
+}
 .button {
     box-sizing: border-box;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
+  border: 2px solid rebeccapurple;
+  border-radius: 0.5em;
+  color: rebeccapurple;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -35,11 +67,11 @@
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 1;
   margin: 20px;
-  padding: 1.2em 2.8em;
+  padding: 1.2em 3.8em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -49,14 +81,13 @@
     cursor: pointer;
     font-family: Times New Roman;
     font-family: inherit;
-    border-color: yellow;
-    color: #030303;
-    box-shadow: 0 0 40px 40px yellow inset, 0 0 0 0 yellow;
+    color: white;
+    box-shadow: 0 0 40px 40px rebeccapurple inset, 0 0 0 0 rebeccapurple;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
   }
   .button:hover {
-    box-shadow: 0 0 10px 0 yellow inset, 0 0 10px 4px yellow;
+    box-shadow: 0 0 10px 0 rebeccapurple inset, 0 0 10px 4px rebeccapurple;
 }
 
 .msgContainer {

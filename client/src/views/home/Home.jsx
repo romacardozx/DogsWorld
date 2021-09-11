@@ -24,6 +24,7 @@ function Home({ input, setInput }) {
   function displayBreeds(array) {
     if (array.message) {
       return (
+        
         <div className={style.notFoundMsg}>
           <p className={style.notFoundMsg}>Dog not found</p>
           <button
@@ -33,6 +34,7 @@ function Home({ input, setInput }) {
             Home
           </button>
         </div>
+        
       )
     }
 
