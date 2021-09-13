@@ -2,19 +2,19 @@
     font-size: 40px;
     font-family: inherit;
     margin: 0;
-    color: #14213D;
+    color: white;
     padding: 5px;
-    background-color: #fca311;
+    background-color: rebeccapurple;
     border-radius: 5px;
     width: fit-content;
     padding-right: 70px;
-    padding-left: 70px;
+    padding-left: 70px; 
     margin-bottom: 30px;
   }
   
   .secondContainer {
     display: flex;
-    color: white;
+    color: #fcf0f0;
     justify-content: center;
     flex-direction: row;
     font-size: 20px;
@@ -34,29 +34,33 @@
   .tempContainer {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 50px;
   }
   
   .img {
     width: 570px;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     object-position: center;
     border-radius: 5px;
+   
   }
   
   .imgContainer {
     width: 600px;
-    height: 410px;
+    height: 540px;
     object-fit: scale-down;
     border-radius: 5px;
     margin-bottom: 10px;
+    background-color: #fcf0f0;
+    
+    
     
   }
   
   .info {
     font-weight: 400;
-    color: #fca311;
+    color: rebeccapurple;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -78,6 +82,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    background-color: #fcf0f0;
   }
   
   .breedContainer {
@@ -85,27 +90,30 @@
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    
   }
   
   .temperament {
     display: inline-block;
     margin: 5px;
-    color: #14213D;
-    background-color: #fca311;
+    color: white;
+    background-color: rebeccapurple;
     border-radius: 5px;
     width: fit-content;
     padding: 7px;
     font-weight: 400;
+    
   }
   
   .tempButtons {
     align-items: center;
     margin-left: 10px;
     border-radius: 5px;
-    background-color: #fca311;
+    background-color: rebeccapurple;
     color: white;
     font-size: 20px;
     font-family: inherit;
+    
   }
   
   .arrow {

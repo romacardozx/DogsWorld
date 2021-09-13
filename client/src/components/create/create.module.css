@@ -1,16 +1,17 @@
 .container {
-    background-color: #09090b;
+    background-color: white;
     padding: 15px;
     padding-bottom: 40px;
     width: 100%;
-    border: 5px solid #FCA311;
+    border: 5px solid rebeccapurple;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px;
 }
 
 
 .selectTempContainer,
 .inputContainer{
-    color: #FCA311;
+    color: blueviolet;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +21,7 @@
 
 .selectTempContainer{
     color: #14213D;
-    color: #FCA311;
+    color: rebeccapurple;
     margin-right: 0;
 }
 
@@ -30,7 +31,7 @@
 
 .button {
     color: white;
-    background-color: #FCA311;
+    background-color: rebeccapurple;
     border-radius: 5px;
     border: none;
     font: inherit;
@@ -39,6 +40,7 @@
     outline: none;
     display: block;
     margin: 28px auto 0;
+    cursor: pointer;
 }
 
 
@@ -56,7 +58,7 @@
     font-family: inherit;
   padding: 8px;
   width: 180px;
-  background-color: #fca21136;
+  background-color: white;
   border-radius: 5px;
   margin-right: 4px;
   border: 3px solid #14213D;
@@ -66,15 +68,15 @@
   .input:hover {
     font-family: inherit;
     padding: 8px;
-    background-color: #fca21136;
+    background-color: white;
     border-radius: 5px;
-    border: 3px solid #FCA311;
+    border: 3px solid rebeccapurple;
     outline: none;
   }
   
   .input:focus {
-    border: 3px solid #FCA311;
-  background-color: #fca211;
+    border: 3px solid rebeccapurple;
+  background-color: white;
   }
 
 .inputsContainer{
@@ -87,7 +89,7 @@
 
 
 .select{
-    background-color: #FCA311;
+    background-color: blueviolet;
     font-family: inherit;
     border-radius: 5px;
     border: 2px solid #0000004f;
@@ -95,6 +97,7 @@
     font-size: 15px;
     padding: 5px;
     width: 180px;
+    cursor: pointer;
 }
 
 
@@ -117,7 +120,7 @@
     margin: 4px 0;
     border-radius: px;
     background-color: transparent;
-    color: #FCA311;
+    color: blueviolet;
     border: none;
     font-size: 15px;
     line-height: 0%;

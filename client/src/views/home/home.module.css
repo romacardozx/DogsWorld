@@ -17,6 +17,9 @@
   }
   
   .mainContainer {
+    background-color:#fcf0f0;
+    height: 100vh;
+    width: 100vh;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -30,26 +33,29 @@
     height: auto;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color:#fcf0f0;
   }
   
   .button {
     color: white;
-    background-color: #fca311;
+    background-color: rebeccapurple;
     border-radius: 5px;
     border: none;
     font: inherit;
     padding: 15px;
     outline: none;
+    cursor: pointer;
   }
   
   .button:hover {
-    background-color: #fca311;
+    background-color: blueviolet;
     transition: all 0.2s;
+
   }
   
   .notFoundMsg {
     font-size: 30px;
-    color: #fca311;
+    color: rebeccapurple;
     margin-top: 20px;
     margin-bottom: 50px;
     display: flex;
@@ -61,29 +67,34 @@
     font-size: 80px;
     color: #0b223a;
     margin-bottom: 30px;
+    
   }
   
   .paginateContainer {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    background-color:#fcf0f0;
+
   }
   
   
   .buttonpage {
     border: 3px solid #14213d;
     color: #14213d;
-    background-color: #fca211;
+    background-color: white;
     border-radius: 5px;
     width: 150px;
     height: 40px;
     margin: 5px;
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
   }
   
   .buttonpage:hover {
-    border: 3px solid #fca211;
-    color: #14213d;
-    background-color: #fca211;
+    border: 3px solid #14213d;
+    color: white;
+    background-color: rebeccapurple;
+    transition: 0.9s;
   }

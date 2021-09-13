@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './searchbar.module.css'
-
+import { FaPaw } from "react-icons/fa";
     //! SearchBar input and Clear button
 function SearchBar({ input, setInput }) {
   return (
@@ -16,7 +16,7 @@ function SearchBar({ input, setInput }) {
           <input
             type="text"
             value={input}
-            placeholder="  Search Dog Breed"
+            placeholder="  Search Dog Breed  "
             onChange={(e) => setInput(e.target.value)}
             className={style.input}
           ></input>
@@ -24,7 +24,7 @@ function SearchBar({ input, setInput }) {
             className={style.button}
             onClick={() => (window.location.href = '/home')}
           >
-            Clear
+            <FaPaw/>
           </button>
         </div>
       </form>

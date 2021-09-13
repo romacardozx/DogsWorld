@@ -2,6 +2,8 @@ import React from 'react'
 import style from './Createbreed.module.css'
 import Create from './../../components/create/create'
 import { Link } from 'react-router-dom'
+import { GiSittingDog } from "react-icons/gi";
+
 
 //! View to present Create Component
 
@@ -12,7 +14,7 @@ function CreateBreed() {
         <span class="fas fa-caret-square-right"></span>
       </Link>
       <div className={style.secondContainer}>
-        <p className={style.title}>Create Dog Breed</p>
+        <p className={style.title}>Create Dog Breed<GiSittingDog/></p>
         <Create />
       </div>
     </div>

@@ -11,6 +11,9 @@
     border: 4px solid #14213D;
     padding: 10px;
     padding-bottom: 15px;
+    box-shadow: 5px 5px 10px gray;
+    background-color: white;
+
 }
 
 .title{
@@ -21,7 +24,7 @@
 
 .card:hover{
     border: 4px solid blueviolet;
-    transition: all .8s;
+    transition: all .9s;
 }
 
 .imgContainer{
@@ -34,8 +37,8 @@
 .button {
     font-size: 18px;
     border: 3px solid #14213d;
-    color: #ffffff65;
-    background-color: #fca21136;
+    color: black;
+    background-color: white;
     border: none;
     border-radius: 5px;
     padding: 8px;
@@ -44,7 +47,7 @@
 
 .button:hover {
     color: blueviolet;
-    background-color: black;
+    background-color: white;
   }
 
 .cardImg{

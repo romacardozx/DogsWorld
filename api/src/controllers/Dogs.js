@@ -69,7 +69,7 @@ await axios.get('https://api.thedogapi.com/v1/breeds')
         height,
         weight,
         life_span,
-        image: '',
+        image:'https://i.imgur.com/2O2A3WP.jpeg',
       })
         .then((breed) => breed.addTemperaments(temperament))
         .then(res.send({ message: 'Created.!' }))
@@ -78,7 +78,7 @@ await axios.get('https://api.thedogapi.com/v1/breeds')
     }
   }
   
-    async function getDogById (req, res, next) {
+    async function getDogById (req, res, next) { 
     var { id } = req.params
     //? Getting Breed if provided in params
     try {

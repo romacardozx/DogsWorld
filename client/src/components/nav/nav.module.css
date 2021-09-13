@@ -6,11 +6,13 @@
     padding: 8px;
     border-bottom: 2px solid rebeccapurple;
     margin-bottom: 30px;
+    background-color:#fcf0f0;
   }
   
   .mainContainer{
     display: flex;
     justify-content: center;
+    background-color:#fcf0f0;
   }
   
   
@@ -21,7 +23,7 @@
   
   .linkContainer a {
       margin: 0 20px;
-      color: rebeccapurple;
+      color: black;
       font-size: 20px;
       font-family: inherit;
       text-decoration: none;
@@ -56,7 +58,7 @@
     
     .navContainer a:hover {
 
-      color: black;
+      color: rebeccapurple;
       transform: translateZ(5px);
     }
   

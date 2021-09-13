@@ -18,7 +18,7 @@ function LandingPage() {
         <button className={style.button} onClick={() => history.push('/home')}>
          <p className={style.msjbutton}> Let's Go <FaDog/></p> 
         </button>
-        <p className={style.created}>CREATED BY ROMAN CARDOZO WITH</p>
+        <p className={style.created}>CREATED BY ROMAN CARDOZO </p>
         <p className={style.icons}> <DiJsBadge/> < FaNodeJs/><DiCss3 /><DiHtml5/><FaReact /> <SiRedux /> <SiPostgresql /></p>
     </div>
    
