@@ -1,9 +1,9 @@
 import React from 'react'
 import style from './landing.module.css'
 import { useHistory } from 'react-router'
-import { FaDog, FaNpm, FaReact, FaPaw } from "react-icons/fa";
+import { FaDog, FaNpm, FaReact, FaPaw, FaNodeJs } from "react-icons/fa";
 import { DiReact, DiCss3, DiNpm, DiJsBadge, DiHtml5, DiPostgresql, DiNodejsSmall, DiJavascript1 } from "react-icons/di";
-import { SiPostgresql } from "react-icons/si";
+import { SiPostgresql, SiRedux } from "react-icons/si";
 
 
 
@@ -19,7 +19,7 @@ function LandingPage() {
          <p className={style.msjbutton}> Let's Go <FaDog/></p> 
         </button>
         <p className={style.created}>CREATED BY ROMAN CARDOZO WITH</p>
-        <p className={style.icons}> <DiJsBadge/> < DiNodejsSmall/><DiCss3 /><DiHtml5/><FaReact /> <FaNpm /> <SiPostgresql /></p>
+        <p className={style.icons}> <DiJsBadge/> < FaNodeJs/><DiCss3 /><DiHtml5/><FaReact /> <SiRedux /> <SiPostgresql /></p>
     </div>
    
     </div>

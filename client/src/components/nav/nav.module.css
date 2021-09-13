@@ -1,17 +1,14 @@
 .navContainer{
-  background-color: black;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     padding: 8px;
-    border-bottom: 2px solid #FCA311;
+    border-bottom: 2px solid rebeccapurple;
     margin-bottom: 30px;
   }
   
   .mainContainer{
-    background-color: black;
     display: flex;
     justify-content: center;
   }
@@ -24,7 +21,7 @@
   
   .linkContainer a {
       margin: 0 20px;
-      color: #FCA311;
+      color: rebeccapurple;
       font-size: 20px;
       font-family: inherit;
       text-decoration: none;
@@ -47,7 +44,7 @@
       height: 3px;
       bottom: -5px;
       left: 0;
-      background-color: #FCA311;
+      background-color: rebeccapurple;
       transform-origin: bottom right;
       transition: transform 0.5s ease-out;
     }
@@ -58,9 +55,8 @@
     }
     
     .navContainer a:hover {
-        background-color: black;
 
-      color: #E5E5E5;
+      color: black;
       transform: translateZ(5px);
     }
   

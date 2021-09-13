@@ -16,7 +16,7 @@ function SearchBar({ input, setInput }) {
           <input
             type="text"
             value={input}
-            placeholder="Search Dog Breed"
+            placeholder="  Search Dog Breed"
             onChange={(e) => setInput(e.target.value)}
             className={style.input}
           ></input>
