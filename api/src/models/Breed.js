@@ -6,6 +6,11 @@ module.exports = (sequelize) => {
   //?DEFINO LA TABLA DE BREED EN LA BASE DE DATOS 
   //?DEFINING BREED TABLE AT DB
   sequelize.define('Breed', {
+    /*id:{ 
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
+      primaryKey: true
+    },*/
     name: {
       type: DataTypes.STRING,
       allowNull: false,
